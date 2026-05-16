@@ -128,7 +128,7 @@ Essa regra permite centralizar as permissões no banco de dados, sem alterar o c
 **Este projeto é desenvolvido EXCLUSIVAMENTE para fins educacionais e de estudo.**
 
 - O código é fornecido "como está", sem garantias de qualquer natureza.
-- **NÃO SE RESPONSABILIZAM** por:
+- **NÃO NOS RESPONSABILIZAMOS** por:
   - Danos diretos ou indiretos decorrentes do uso do software.
   - Perda de dados, interrupção de negócios ou quaisquer prejuízos materiais.
   - Penalidades administrativas, cíveis ou criminais.
