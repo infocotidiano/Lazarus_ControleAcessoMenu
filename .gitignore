@@ -1,0 +1,52 @@
+# ===== Pastas geradas =====
+
+/lib/
+/temp/
+/bin/
+/backup/
+/tmp/
+/debug/
+/release/
+
+# ===== Backup específico =====
+
+backup/
+backup/
+**/backup/
+
+*.ini
+
+# ===== Binários =====
+
+*.exe
+
+# ===== Compilação FreePascal/Lazarus =====
+
+*.o
+*.ppu
+*.a
+*.or
+*.res
+*.compiled
+*.dbg
+*.dcu
+
+# ===== Executáveis gerados =====
+
+GridBotoes.exe
+
+# ===== Arquivos temporários =====
+
+*.bak
+*.tmp
+*.log
+
+# ===== IDE / Config =====
+
+.vscode/
+.codex
+
+# ===== Sistema =====
+
+Thumbs.db
+.DS_Store

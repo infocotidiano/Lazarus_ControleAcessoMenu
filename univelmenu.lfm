@@ -1,0 +1,64 @@
+object frm_nivelmenu: Tfrm_nivelmenu
+  Left = 456
+  Height = 363
+  Top = 250
+  Width = 628
+  Caption = 'Nivel Menu'
+  ClientHeight = 363
+  ClientWidth = 628
+  Position = poMainFormCenter
+  LCLVersion = '4.4.0.0'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  object DBGrid1: TDBGrid
+    Left = 15
+    Height = 300
+    Top = 16
+    Width = 769
+    Color = clWindow
+    Columns = <    
+      item
+        ReadOnly = True
+        Title.Caption = 'nome'
+        Width = 100
+        FieldName = 'nome'
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'descricao'
+        Width = 400
+        FieldName = 'descricao'
+      end    
+      item
+        Title.Caption = 'nivel'
+        Width = 50
+        FieldName = 'nivel'
+      end>
+    DataSource = dsMENU
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgCancelOnExit, dgDisableDelete, dgDisableInsert, dgDblClickAutoSize]
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 18
+    Height = 15
+    Top = 332
+    Width = 350
+    Caption = 'Altere o nivel para testar o acesso: de 1 a 9 (9 nivel maximo admin)'
+  end
+  object qrMENU: TZQuery
+    Connection = frmPrincipal.conexao
+    Active = True
+    SQL.Strings = (
+      'select * from crt_menu'
+      'order by indice'
+    )
+    Params = <>
+    Left = 336
+    Top = 16
+  end
+  object dsMENU: TDataSource
+    DataSet = qrMENU
+    Left = 408
+    Top = 16
+  end
+end

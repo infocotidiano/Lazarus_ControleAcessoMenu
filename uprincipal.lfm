@@ -2,25 +2,48 @@ object frmPrincipal: TfrmPrincipal
   Left = 603
   Height = 337
   Top = 250
-  Width = 577
+  Width = 705
   Caption = 'Teste Controle Menu'
-  ClientHeight = 317
-  ClientWidth = 577
+  ClientHeight = 337
+  ClientWidth = 705
   Menu = MainMenu1
+  Position = poDesktopCenter
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
   OnShow = FormShow
-  LCLVersion = '2.0.8.0'
   object btnMudaNivel: TButton
-    Left = 429
+    Left = 344
     Height = 25
-    Top = 17
-    Width = 75
-    Caption = 'Muda Nivel'
-    OnClick = btnMudaNivelClick
+    Top = 8
+    Width = 216
+    Caption = 'Muda Nivel Usuario Atual'
     TabOrder = 0
+    OnClick = btnMudaNivelClick
+  end
+  object Button1: TButton
+    Left = 345
+    Height = 25
+    Top = 39
+    Width = 215
+    Caption = 'Trocar de Usuario'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 25
+    Top = 256
+    Width = 616
+    Caption = 'Para mudar as permissoes do menu (niveis) acesse usuário -> Permissões'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
   end
   object MainMenu1: TMainMenu
-    left = 80
-    top = 72
+    Left = 80
+    Top = 72
     object MenuItem1: TMenuItem
       Caption = 'Cadastros'
       object MenuItem7: TMenuItem
@@ -88,9 +111,11 @@ object frmPrincipal: TfrmPrincipal
       Caption = 'Usuarios'
       object MenuItem24: TMenuItem
         Caption = 'Cadastro Usuario'
+        OnClick = MenuItem24Click
       end
       object MenuItem25: TMenuItem
         Caption = 'Permissões'
+        OnClick = MenuItem25Click
       end
     end
     object MenuItem6: TMenuItem
@@ -99,26 +124,27 @@ object frmPrincipal: TfrmPrincipal
   end
   object conexao: TZConnection
     ControlsCodePage = cCP_UTF8
-    AutoEncodeStrings = True
-    Catalog = 'pdv'
+    Catalog = 'exemplo_controle_acesso_menu'
     Properties.Strings = (
       'AutoEncodeStrings=ON'
+      'RawStringEncoding=DB_CP'
     )
-    Connected = True
+    BeforeConnect = conexaoBeforeConnect
+    DisableSavepoints = False
     Port = 3306
-    Database = 'DRIVER={MySQL ODBC 8.0 Unicode Driver};SERVER=localhost;DATABASE=pdv;USER=root;PASSWORD=Info@3004;OPTION=3;'
-    Protocol = 'ado'
-    left = 450
-    top = 71
+    Database = 'exemplo_controle_acesso_menu'
+    Protocol = 'mariadb'
+    Left = 450
+    Top = 71
   end
   object ZQuery1: TZQuery
     Params = <>
-    left = 397
-    top = 143
+    Left = 397
+    Top = 143
   end
   object ZUpdateSQL1: TZUpdateSQL
     UseSequenceFieldForRefreshSQL = False
-    left = 422
-    top = 203
+    Left = 480
+    Top = 152
   end
 end
