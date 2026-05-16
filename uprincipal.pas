@@ -1,3 +1,22 @@
+{ ****************************************************************************** }
+{ ***                   SISTEMA DE CONTROLE DE ACESSO A MENUS                 *** }
+{ ****************************************************************************** }
+{ *** Projeto    : Controle de Acesso a Menus com Lazarus                     *** }
+{ *** Descrição  : Aplicação para demonstrar o controle de itens de menu      *** }
+{ ***              com base no nível de acesso do usuário autenticado.        *** }
+{ ***              Utiliza MariaDB, ZeosLib e RX Library.                     *** }
+{ ***                                                                         *** }
+{ *** Autor      : Daniel de Morais                                           *** }
+{ *** Canal      : Infocotidiano                                              *** }
+{ ***                                                                         *** }
+{ *** Data Criação    : Junho de 2020                                         *** }
+{ *** Versão Inicial  : 1.0                                                   *** }
+{ *** Fontes/Referências:                                                     *** }
+{ ***   - Vídeo 1 : https://youtu.be/qeXXtp9yjlY                              *** }
+{ ***   - Vídeo 2 : https://youtu.be/VHY6GFd-MSY                              *** }
+{ ***   - Canal   : https://www.youtube.com/user/infocotidiano/               *** }
+{ ***                                                                         *** }
+{ ****************************************************************************** }
 unit uprincipal;
 
 {$mode objfpc}{$H+}

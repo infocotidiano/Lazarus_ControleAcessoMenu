@@ -122,3 +122,17 @@ Essa regra permite centralizar as permissões no banco de dados, sem alterar o c
 - Vídeos relacionados:
   - <https://youtu.be/qeXXtp9yjlY>
   - <https://youtu.be/VHY6GFd-MSY>
+
+## ⚠️ Aviso Legal - Uso Educacional
+
+**Este projeto é desenvolvido EXCLUSIVAMENTE para fins educacionais e de estudo.**
+
+- O código é fornecido "como está", sem garantias de qualquer natureza.
+- **NÃO SE RESPONSABILIZAM** por:
+  - Danos diretos ou indiretos decorrentes do uso do software.
+  - Perda de dados, interrupção de negócios ou quaisquer prejuízos materiais.
+  - Penalidades administrativas, cíveis ou criminais.
+  - Mau uso, uso indevido ou aplicação em sistemas reais/produtivos.
+- O usuário assume **TODA A RESPONSABILIDADE** pela adequação, segurança e conformidade legal (incluindo LGPD) ao utilizar este código.
+
+**⚠️ IMPORTANTE:** Para uso em produção, APLICAR REGRAS LGPD, COMO UM EXEMPLO A CRIPTOGRAFIA DOS DADOS;

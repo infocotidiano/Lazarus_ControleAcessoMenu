@@ -6,7 +6,7 @@ object frmTelalogin: TfrmTelalogin
   Caption = 'Login'
   ClientHeight = 240
   ClientWidth = 320
-  LCLVersion = '2.0.8.0'
+  LCLVersion = '4.4.0.0'
   object edtUSUARIO: TEdit
     Left = 77
     Height = 23
@@ -45,7 +45,7 @@ object frmTelalogin: TfrmTelalogin
     Top = 176
     Width = 75
     Caption = 'Login'
-    OnClick = btnLoginClick
     TabOrder = 2
+    OnClick = btnLoginClick
   end
 end

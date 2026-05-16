@@ -47,7 +47,6 @@ object frm_nivelmenu: Tfrm_nivelmenu
   end
   object qrMENU: TZQuery
     Connection = frmPrincipal.conexao
-    Active = True
     SQL.Strings = (
       'select * from crt_menu'
       'order by indice'
